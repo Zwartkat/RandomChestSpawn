@@ -1,0 +1,10 @@
+name: RandomChestSpawn
+version: '${version}'
+main: fr.zwartkat.randomchestspawn.RandomChestSpawn
+api-version: '1.20'
+commands:
+  rcs:
+    description: 'RandomChestSpawn commands'
+    usage: '/rsc <args>'
+    permission: rsc.command
+    permission-message: 'You are not allowed to use this command'

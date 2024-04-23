@@ -1,0 +1,21 @@
+prefix : "&9&lRCS - "
+invalid_arguments : "&cInvalid arguments"
+configuration_error: "&cThere is a problem with the configuration"
+reload: "&aPlugin was been reloaded"
+chest_already_open: "&cThis chest is already open"
+
+# ------ Chest apparition ------
+
+# The number of chest by events
+number: 1
+chests:
+  chest1:
+    world: "world"
+    x: 100
+    y: 100
+    z: 100
+  chest2:
+    world: "world"
+    x: 102
+    y: 102
+    z: 102
