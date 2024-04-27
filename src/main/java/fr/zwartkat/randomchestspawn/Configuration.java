@@ -1,5 +1,6 @@
 package fr.zwartkat.randomchestspawn;
 
+import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.configuration.file.YamlConfiguration;
 
 import java.io.File;
@@ -13,6 +14,7 @@ public class Configuration {
     private YamlConfiguration config;
 
     public Configuration(String filePath){
+
         this.filePath = filePath;
     }
 
@@ -55,6 +57,13 @@ public class Configuration {
         return config.getList(key);
     }
 
+    public ConfigurationSection getConfigurationSection(String key){
+        return config.getConfigurationSection(key);
+    }
+
+    public ConfigurationSection createSection(String key){
+        return config.createSection(key);
+    }
     public void set(String key, Object value){
         config.set(key, value);
         save();

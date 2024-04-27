@@ -1,13 +1,19 @@
+# ----- Global messages -----
+
 prefix : "&9&lRCS - "
 invalid_arguments : "&cInvalid arguments"
 configuration_error: "&cThere is a problem with the configuration"
 reload: "&aPlugin was been reloaded"
-chest_already_open: "&cThis chest is already open"
 
 # ------ Chest apparition ------
 
+# The duration of the event (in seconds)
+duration: 300
 # The number of chest by events
-number: 1
+number: 2
+# Item to show above the chest (null if you want to don't set item)
+item_display: "DIAMOND"
+# The location of the chest
 chests:
   chest1:
     world: "world"
@@ -19,3 +25,29 @@ chests:
     x: 102
     y: 102
     z: 102
+
+loots:
+  diamond:
+    material: DIAMOND
+    model_data: 1
+    lore:
+    quantity: 2
+    percent: 2
+  golden_apple:
+    material: golden_apple
+    model_data: 5
+    lore:
+      - "Test"
+    quantity: 2
+    percent: 2
+
+# ----- Messages -----
+
+event_message: "The chest event despawn in %time% seconds"
+chest_already_open: "&cThis chest is already open"
+event_not_started: "&cChest apparition is not started"
+event_still_started: "&cChest apparition is always started"
+event_finished: "&cChest apparition is finished"
+no_chest: "&cThere is no chest"
+error_displayed_item: "&cThe specified item doesn't exist"
+
